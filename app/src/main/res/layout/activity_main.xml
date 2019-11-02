@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGrey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/screenHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorDarkGrey"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="right"
+        android:paddingEnd="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="35dp"></TextView>
+
+    <TextView
+        android:id="@+id/screenResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorDarkGrey"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="right"
+        android:paddingEnd="20dp"
+        android:text="0"
+        android:textColor="@color/colorWhite"
+        android:textSize="70dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="5"
+        android:background="@color/colorDarkGrey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnC"
+                style="@style/greyButton"
+                android:onClick="btnClear"
+                android:text="C"></Button>
+
+            <Button
+                android:id="@+id/btnPlusMinus"
+                style="@style/greyButton"
+                android:drawable="@drawable/button_press_grey"
+                android:onClick="btnOperator"
+                android:text="+/-"></Button>
+
+            <Button
+                android:id="@+id/btnModule"
+                style="@style/greyButton"
+                android:drawable="@drawable/button_press_grey"
+                android:onClick="btnMod"
+                android:text="%"></Button>
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/yellowButton"
+                android:onClick="btnOperator"
+                android:text="\u00f7"></Button>
+
+            <Button
+                android:id="@+id/btnPower"
+                style="@style/yellowButton"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnPower"
+                android:text=""
+                android:textSize="@dimen/fontSize"></Button>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="7"></Button>
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="8"></Button>
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="9"></Button>
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/yellowButton"
+                android:onClick="btnOperator"
+                android:text="\u00d7"></Button>
+
+            <Button
+                android:id="@+id/btnMPlus"
+                style="@style/yellowButton"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnOperator"
+                android:text="M+"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="4"></Button>
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="5"></Button>
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="6"></Button>
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="@style/yellowButton"
+                android:onClick="btnOperator"
+                android:text="-"></Button>
+
+            <Button
+                android:id="@+id/btnMMinus"
+                style="@style/yellowButton"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnOperator"
+                android:text="M-"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="1"></Button>
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/LightGreyButton"
+                android:onClick="btnClicked"
+                android:text="2"></Button>
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/LightGreyButton"
+                android:background="@drawable/button_press_light_grey"
+                android:onClick="btnClicked"
+                android:text="3"></Button>
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/yellowButton"
+                android:onClick="btnOperator"
+                android:text="+"></Button>
+
+            <Button
+                android:id="@+id/btnMC"
+                style="@style/yellowButton"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnOperator"
+                android:text="MC"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey" />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/LightGreyButton"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="2"
+                android:gravity="left|center_vertical"
+                android:onClick="btnClicked"
+                android:paddingLeft="30dp"
+                android:text="0"></Button>
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/LightGreyButton"
+                android:layout_marginBottom="0dp"
+                android:onClick="btnDot"
+                android:text="."></Button>
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/yellowButton"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnEqual"
+                android:text="="></Button>
+
+            <Button
+                android:id="@+id/btnMR"
+                style="@style/yellowButton"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/button_press_yellow"
+                android:onClick="btnOperator"
+                android:text="MR"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
